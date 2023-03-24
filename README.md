@@ -1,6 +1,6 @@
 # Интернет-магазин кроссовок
  
-### Ссылка на сайт: <a href="https://soloveva98.github.io/sneakers-react/">Sneakers</a>
+### Ссылка на сайт: <a href="https://soloveva98.github.io/sneakers-react/">Sneakers-react</a>
 
 #### :hammer_and_wrench: Стек технологий:
 <a href="https://developer.mozilla.org/en-US/docs/Web/react" target="_blank" rel="noreferrer">
