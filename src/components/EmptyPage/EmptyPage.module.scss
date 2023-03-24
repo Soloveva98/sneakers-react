@@ -1,0 +1,52 @@
+.emptyPage{
+	height: 100%;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Inter';
+	text-align: center;
+	&__img{
+		width: 70px;
+	}
+	h1{
+		margin: 25px 0 10px;
+		font-weight: 600;
+		font-size: 24px;
+	}
+	p{
+		font-size: 16px;
+		color: #BDBDBD;
+		line-height: 24px;
+	}
+	button{
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 770px) {
+	.emptyPage{
+		padding: 80px 0;
+		&__img{width: 40px;}
+		h1{
+			margin: 20px 0 10px;
+			font-size: 18px;
+		}
+		p{font-size: 14px;}
+		button{margin-top: 20px;}
+	}
+}
+
+@media (max-width: 550px) {
+	.emptyPage{
+		padding: 60px 0;
+		&__img{width: 30px;}
+		h1{
+			margin: 15px 0 10px;
+			font-size: 16px;
+		}
+		p{font-size: 13px;}
+		button{margin-top: 15px;}
+	}
+}

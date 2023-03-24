@@ -1,0 +1,138 @@
+.overlay{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+.overlayVisible{
+	visibility: visible;
+	opacity: 1;
+	.drawer{
+		transform: translateX(0%);
+	}
+}
+
+.drawer{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 420px;
+	height: 100%;
+	right: 0;
+	background: #FFFFFF;
+	box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-in-out;
+	h2{
+		margin: 0;
+		font-size: 24px;
+	}
+}
+
+.removeBtn{
+	opacity: 0.5;
+	cursor: pointer;
+	transition: opacity 0.15s ease-in-out;
+	&:hover{
+		opacity: 1;
+	}
+}
+
+.items{
+	flex: 1;
+	overflow: auto;
+	margin-bottom: 40px;
+}
+
+.cartItem{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	border: 1px solid #F3F3F3;
+	border-radius: 20px;
+	padding: 20px;
+	overflow: hidden;
+	.cartItemImg{
+		width: 70px;
+		height: 70px;
+		background-size: contain;
+		background-position: 0 -3px;
+		background-repeat: no-repeat;
+		margin-right: 20px;
+	}
+}
+
+.cartTotalBlock{
+	ul{
+		margin-bottom: 40px !important;
+		li{
+			display: flex;
+			align-items: flex-end;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		div{
+			flex: 1;
+			height: 1px;
+			border-bottom: 1px dashed #DFDFDF;
+			position: relative;
+			top: -4px;
+			margin: 0 7px;
+		}
+		b{
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.drawer{
+		width: 320px;
+		padding: 25px;
+		h2{font-size: 22px;}
+	}
+	.cartItem{
+		margin-bottom: 10px;
+		padding: 10px;
+		.cartItemImg{
+			width: 60px;
+			height: 60px;
+			background-position: 0 -1px;
+			margin-right: 15px;
+		}
+		p {font-size: 12px;}
+		b {font-size: 13px;}
+	}
+	
+	.cartTotalBlock{
+		ul{
+			margin-bottom: 25px !important;
+			li{
+				margin-bottom: 15px;
+				font-size: 14px;
+			}
+			div{top: -2px;}
+			b{
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.drawer{
+		width: 270px;
+		padding: 25px 15px;
+		h2{font-size: 20px;}
+	}
+}
