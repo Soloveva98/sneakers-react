@@ -20,7 +20,7 @@ function Home({ items, searchValue, onChangeSearchInput, onAddToFavorite, onAddT
 	return (
 		<div className="content">
 			<div className="intro">
-				<img src="img/intro.png" width="100% " />
+				<img src="img/intro.png" />
 			</div>
 
 			<div className="title d-flex align-center justify-between mb-40">
