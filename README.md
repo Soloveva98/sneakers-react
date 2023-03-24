@@ -36,5 +36,8 @@
 ###### Оформление и отображение заказов:
 ![](/order.gif)
 
+###### Burger-меню:
+![](/burger.gif)
+
 ###### React Skeleton:
 ![](/skeleton.gif)
